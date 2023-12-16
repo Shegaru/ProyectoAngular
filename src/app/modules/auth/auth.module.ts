@@ -1,17 +1,24 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule, JsonPipe } from '@angular/common';
 
 import { AuthRoutingModule } from './auth-routing.module';
-import { LoginPageComponent } from './components/login-page/login-page.component';
-
+import { ReactiveFormsModule, Validators } from '@angular/forms';
+import { SharedModule } from '@shared/shared.module';
 
 @NgModule({
   declarations: [
-    LoginPageComponent
   ],
   imports: [
     CommonModule,
+    SharedModule,
+    ReactiveFormsModule,
+    JsonPipe,
     AuthRoutingModule
+  ],
+  exports: [
+    SharedModule,
+    ReactiveFormsModule,
+    JsonPipe
   ]
 })
 export class AuthModule { }
