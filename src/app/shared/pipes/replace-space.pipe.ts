@@ -2,7 +2,6 @@ import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
   name: 'replaceSpace', //<== Este es el nombre del pipe
-  standalone: true
 })
 export class ReplaceSpacePipe implements PipeTransform {
 

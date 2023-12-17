@@ -5,10 +5,11 @@ import { ReplaceSpacePipe } from './pipes/replace-space.pipe';
 
 
 @NgModule({
-  declarations: [],
-  imports: [
-    CommonModule,
+  declarations: [
     ReplaceSpacePipe
+  ],
+  imports: [
+    CommonModule
   ],
   exports:[
     ReplaceSpacePipe
