@@ -2,7 +2,7 @@ import { inject } from '@angular/core';
 import { CanActivateFn, Router } from '@angular/router';
 
 export const validateSessionGuard: CanActivateFn = (route, state) => {
-  const cookie : string | null = null;
+  const cookie : string | null = 's';
   const router = inject(Router);
 
   function checkCookie(){

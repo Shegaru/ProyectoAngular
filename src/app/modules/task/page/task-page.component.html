@@ -1,1 +1,12 @@
-<p>task-page works!</p>
+<app-header></app-header>
+
+<div class="padre" [ngSwitch]="case">
+  <div *ngSwitchCase="0" class="hijo"> Hola soy Pedro</div>
+
+  <div *ngSwitchCase="2" class="hijo"> Hola soy Maria</div>
+
+  <div *ngSwitchCase="3" class="hijo"> Hola soy Pedro y Maria</div>
+
+  <div *ngSwitchDefault>Opcion por defecto</div>
+
+</div>
